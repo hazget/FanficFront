@@ -47,12 +47,20 @@ export default function TopBar() {
         </ul>
       </div>
       <div className="topRight">
+      <button className="burger" onClick={()=>{
+             if (burger === 'burgerList'){
+               setBurger("burgerListActive")
+             }else{setBurger("burgerList")}
+             
+           }} >
+                <i class="fas fa-align-justify"></i>
+              </button>
         {user ? (
           <Link to="/settings">
             <img className="topImg" src={PF+user.profilePic} alt="" />
           </Link>
         ) : (
-          <><ul className="topList">
+          <ul className="topList">
             <li className="topListItem">
               <Link className="link" to="/login">
                 LOGIN
@@ -65,14 +73,7 @@ export default function TopBar() {
             </li>
             
           </ul>
-           <button className="burger" onClick={()=>{
-             if (burger === 'burgerList'){
-               setBurger("burgerListActive")
-             }else{setBurger("burgerList")}
-             
-           }} >
-                |||
-              </button></>
+           
         )}
         
         <i className="topSearchIcon fas fa-search"></i>
@@ -106,12 +107,7 @@ export default function TopBar() {
             </li>
             </ul>
             <div className="topRight">
-                            {user ? (
-              <Link to="/settings">
-              <img className="topImg" src={PF+user.profilePic} alt="" />
-              </Link>
-        ) : (
-            <div><ul className="mobileList">
+                            {user ? (<span></span>) : (    <div><ul className="mobileList">
               <li className="topListItem">
                 <Link className="link" to="/login">
                 LOGIN

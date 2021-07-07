@@ -16,12 +16,11 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
+        <span className="sidebarTitle">About Fandom</span>
         <img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/D7OAZFTISY3C5MXRSE4IYHLITY.jpg" alt=""
         />
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui
-          necessitatibus nostrum illum reprehenderit.
+          Создан для написания своих рассказов.
         </p>
       </div>
       <div className="sidebarItem">

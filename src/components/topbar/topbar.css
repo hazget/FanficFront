@@ -81,6 +81,7 @@
   @media screen and (max-width:768px ) {
     .burger{
       display: inline-block;
+      margin-right: 10px;
     }
     .topList{
       display:none

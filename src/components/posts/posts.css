@@ -6,6 +6,16 @@
     justify-content: space-evenly;
 }
 
+.postsDark{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: space-evenly;
+    background-color:black;
+    color:white;
+}
+
 @media screen and (max-width:768px ) {
     .posts{
         flex-direction: column;

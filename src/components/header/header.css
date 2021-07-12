@@ -1,13 +1,26 @@
-.header {
-    margin-top: 60px;
+
+
+  .headerDark {    
+    background-color:black;
+    color:white;
   }
   
   .headerTitles {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lora", serif;
+    color: black;
+  }
+
+  .headerTitlesDark {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Lora", serif;
     color: #444;
+    background-color: black;
   }
   
   .headerTitleSm {
@@ -28,3 +41,11 @@
       margin-top: 80px;
       object-fit: cover;
   }
+
+  .headerImgDark{
+    width: 100%;
+    height: 450px;
+    margin-top: 80px;
+    object-fit: cover;
+    background-color:black
+}

@@ -3,21 +3,23 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./topbar.css";
 
-export default function TopBar() {
+export default function TopBar({theme, changeTheme}) {
   const { user, dispatch } = useContext(Context);
   const PF = "http://localhost:5000/images/"
 
+ 
   const [burger, setBurger] = useState("burgerList");
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
   };
+  
+  
   return (
-    <div className="top">
+    <div className={'top'+theme}>
       <div className="topLeft">
-        <i className="topIcon fab fa-facebook-square"></i>
-        <i className="topIcon fab fa-twitter-square"></i>
-        <i className="topIcon fab fa-pinterest-square"></i>
-        <i className="topIcon fab fa-instagram-square"></i>
+        
+      <button  onClick={changeTheme}><i class="fas fa-cloud-moon"></i></button>
+
       </div>
       <div className="topCenter">
         <ul className="topList">

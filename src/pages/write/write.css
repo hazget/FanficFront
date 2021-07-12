@@ -1,6 +1,12 @@
 .write {
     padding-top: 50px;
   }
+
+  .writeDark {
+    padding-top: 50px;
+    background-color:black;
+    color:white;
+  }
   
   .writeImg {
     margin-left: 150px;
@@ -19,6 +25,14 @@
     display: flex;
     align-items: center;
   }
+
+  .writeFormGroupDark {
+    margin-left: 150px;
+    display: flex;
+    align-items: center;
+    background-color:black;
+    color:white;
+  }
   
   .writeIcon {
     width: 25px;
@@ -32,12 +46,23 @@
     color: rgb(121, 118, 118);
     cursor: pointer;
   }
+
+  
   
   .writeInput {
     font-size: 30px;
     border: none;
     padding: 20px;
     width: 70vw;
+  }
+
+  .writeInputDark {
+    font-size: 30px;
+    border: none;
+    padding: 20px;
+    width: 70vw;
+    background-color:black;
+    color:white;
   }
   
   .writeInput:focus {
@@ -47,6 +72,12 @@
   .writeText {
     font-size: 20px;
     height: 100vh;
+  }
+  .writeTextDark {
+    font-size: 20px;
+    height: 100vh;
+    background-color:black;
+    color:white;
   }
   
   .writeSubmit {

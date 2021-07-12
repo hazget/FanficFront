@@ -2,6 +2,12 @@
     display: flex;
 }
 
+.homeDark {
+    display: flex;
+    background-color:black;
+    color:white;
+}
+
 @media screen and (max-width:768px ) {
     .home{
         flex-direction: column;

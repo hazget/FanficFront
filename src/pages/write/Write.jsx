@@ -3,7 +3,7 @@ import "./write.css";
 import axios from "axios";
 import { Context } from "../../context/Context";
 
-export default function Write() {
+export default function Write({theme}) {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
   const [file, setFile] = useState(null);
@@ -32,7 +32,7 @@ export default function Write() {
     } catch (err) {}
   };
   return (
-    <div className="write">
+    <div className={"write"+theme}>
       {file && (
         <img className="writeImg" src={URL.createObjectURL(file)} alt="" />
       )}
@@ -50,7 +50,7 @@ export default function Write() {
           <input
             type="text"
             placeholder="Title"
-            className="writeInput"
+            className={"writeInput"+theme}
             autoFocus={true}
             onChange={e=>setTitle(e.target.value)}
           />
@@ -59,7 +59,7 @@ export default function Write() {
           <textarea
             placeholder="Tell your story..."
             type="text"
-            className="writeInput writeText"
+            className={"writeInput writeText"+theme}
             onChange={e=>setDesc(e.target.value)}
           ></textarea>
         </div>

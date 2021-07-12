@@ -6,7 +6,7 @@ import "./home.css";
 import axios from "axios";
 import { useLocation } from "react-router";
 
-export default function Home() {
+export default function Home({theme}) {
   const [posts, setPosts] = useState([]);
   const { search } = useLocation();
 
@@ -19,10 +19,10 @@ export default function Home() {
   }, [search]);
   return (
     <>
-      <Header />
-      <div className="home">
-        <Posts posts={posts} />
-        <Sidebar />
+      <Header theme={theme}/>
+      <div className={"home"+theme}>
+        <Posts posts={posts} theme={theme}/>
+        <Sidebar theme={theme}/>
       </div>
     </>
   );

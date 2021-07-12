@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./singlePost.css";
 
-export default function SinglePost() {
+export default function SinglePost({theme}) {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
@@ -46,7 +46,7 @@ export default function SinglePost() {
   };
 
   return (
-    <div className="singlePost">
+    <div className={"singlePost"+theme}>
       <div className="singlePostWrapper">
         {post.photo && (
           <img src={PF + post.photo} alt="" className="singlePostImg" />
@@ -55,7 +55,7 @@ export default function SinglePost() {
           <input
             type="text"
             value={title}
-            className="singlePostTitleInput"
+            className={"singlePostTitleInput"+theme}
             autoFocus
             onChange={(e) => setTitle(e.target.value)}
           />
@@ -89,7 +89,7 @@ export default function SinglePost() {
         </div>
         {updateMode ? (
           <textarea
-            className="singlePostDescInput"
+            className={"singlePostDescInput"+theme}
             value={desc}
             onChange={(e) => setDesc(e.target.value)}
           />

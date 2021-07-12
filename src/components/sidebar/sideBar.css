@@ -8,6 +8,18 @@
     flex-direction: column;
     align-items: center;
   }
+
+ .sidebarDark {
+    flex: 3;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
   
   .sidebarItem {
     display: flex;

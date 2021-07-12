@@ -1,6 +1,12 @@
 .singlePost {
     flex: 9;
   }
+
+  .singlePostDark {
+    flex: 9;
+    background-color:black;
+    color:white
+  }
   
   .singlePostWrapper {
     padding: 20px;
@@ -30,6 +36,17 @@
     text-align: center;
     border: none;
     color: gray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  .singlePostTitleInputDark {
+    margin: 10px;
+    font-family: "Lora", serif;
+    font-size: 28px;
+    text-align: center;
+    border: none;
+    background-color:black;
+    color:white;
     border-bottom: 1px solid lightgray;
   }
   
@@ -82,7 +99,15 @@
     font-size: 18px;
     line-height: 25px;
   }
-  
+
+  .singlePostDescInputDark {
+    border: none;
+    background-color:black;
+    color:white;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
   .singlePostDescInput:focus {
     outline: none;
   }

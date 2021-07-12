@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./sideBar.css";
 
-export default function Sidebar() {
+export default function Sidebar({theme}) {
   const [cats, setCats] = useState([]);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ export default function Sidebar() {
     getCats();
   }, []);
   return (
-    <div className="sidebar">
+    <div className={"sidebar"+theme}>
       <div className="sidebarItem">
         <span className="sidebarTitle">About Fandom</span>
         <img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/D7OAZFTISY3C5MXRSE4IYHLITY.jpg" alt=""
